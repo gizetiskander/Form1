@@ -19,7 +19,10 @@ namespace Form1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Pen pn = new Pen(Color.Black)
+            var graphics = panel1.CreateGraphics();
+            Pen pn = new Pen(Color.Black, 5);
+            graphics.DrawLine(pn, 50, 50, 50, 50);
+            graphics.DrawEllipse(pn, 50, 50, 50, 50);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
