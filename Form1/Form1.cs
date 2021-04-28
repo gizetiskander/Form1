@@ -56,8 +56,12 @@ namespace Form1
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
+    }
 }
